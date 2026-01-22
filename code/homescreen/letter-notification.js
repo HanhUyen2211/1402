@@ -19,14 +19,14 @@ class LetterNotification {
 
         // Map dates to background images
         const backgroundMap = {
-            '1402': '../../source/lockscreen-bg.png',
-            '1602': '../../source/bg02.png',
-            '1702': '../../source/bg03.png',
-            '1802': '../../source/bg04.png',
-            '1902': '../../source/bg05.png',
-            '2002': '../../source/bg06.png',
-            '2102': '../../source/bg07.png',
-            '2202': '../../source/bg08.png'
+            '1402': 'source/lockscreen-bg.png',
+            '1602': 'source/bg02.png',
+            '1702': 'source/bg03.png',
+            '1802': 'source/bg04.png',
+            '1902': 'source/bg05.png',
+            '2002': 'source/bg06.png',
+            '2102': 'source/bg07.png',
+            '2202': 'source/bg08.png'
         };
 
         // Map dates to content
@@ -103,18 +103,17 @@ class LetterNotification {
 
         // Map dates to background images
         const backgroundMap = {
-            '1402': '../../source/lockscreen-bg.png',
-            '1602': '../../source/bg02.png',
-            '1702': '../../source/bg03.png',
-            '1802': '../../source/bg04.png',
-            '1902': '../../source/bg05.png',
-            '2002': '../../source/bg06.png',
-            '2102': '../../source/bg07.png',
-            '2202': '../../source/bg08.png'
+            '1402': 'source/lockscreen-bg.png',
+            '1602': 'source/bg02.png',
+            '1702': 'source/bg03.png',
+            '1802': 'source/bg04.png',
+            '1902': 'source/bg05.png',
+            '2002': 'source/bg06.png',
+            '2102': 'source/bg07.png',
+            '2202': 'source/bg08.png'
         };
 
-        const backgroundImage = backgroundMap[selectedDate] || '../source/lockscreen-bg.png';
-
+        const backgroundImage = backgroundMap[selectedDate] || 'source/lockscreen-bg.png';
         // Apply the background to the lockscreen-bg element
         const lockscreenBg = document.querySelector('.lockscreen-bg');
         if (lockscreenBg) {

@@ -88,7 +88,7 @@ body {
     left: 0;
     right: 0;
     bottom: 24px; /* Leave space for navigation bar */
-    background-image: url('../../source/background-191355.png');
+    background-image: url('source/background-191355.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

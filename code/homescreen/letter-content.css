@@ -91,7 +91,7 @@ body {
     left: 0;
     right: 0;
     bottom: 24px; /* Leave space for navigation bar */
-    background-image: url('../source/lockscreen-bg.png'); /* Default, will be overridden by JavaScript */
+    background-image: url('source/lockscreen-bg.png'); /* Default, will be overridden by JavaScript */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
