@@ -1,0 +1,237 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main letter content container */
+.letter-content {
+    width: 412px;
+    height: 892px;
+    border-radius: 18px;
+    border: 8px solid rgba(116, 119, 117, 0.5);
+    position: relative;
+    overflow: hidden;
+    background: #627C77;
+}
+
+/* Status Bar */
+.status-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    gap: 4px;
+    z-index: 10;
+}
+
+.time-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.time {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4285714285714286em;
+    letter-spacing: 1.7857142857142856%;
+    color: #FFFFFF;
+}
+
+.status-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Status icons (simplified) */
+.wifi,
+.signal,
+.battery {
+    width: 16px;
+    height: 16px;
+    background: #FFFFFF;
+    border-radius: 1px;
+}
+
+.camera-cutout {
+    position: absolute;
+    left: 50%;
+    top: 8px;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 24px;
+    background: #627C77;
+    border-radius: 12px;
+}
+
+/* Lockscreen Background */
+.lockscreen-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 24px; /* Leave space for navigation bar */
+    background-image: url('../source/lockscreen-bg.png'); /* Default, will be overridden by JavaScript */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Letter Paper */
+.letter-paper {
+    position: absolute;
+    top: 50px;
+    left: 19px;
+    right: 19px;
+    bottom: 96px; /* Leave space for back button */
+    background: #fdffdc;
+    border-radius: 18px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 16px;
+    overflow-y: auto;
+}
+
+.letter-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4285714285714286em;
+    letter-spacing: 1.7857142857142856%;
+    color: #000000;
+    text-align: justify;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    line-height: 1.6;
+}
+
+/* Back to Home Button */
+.back-to-home {
+    position: absolute;
+    bottom: 20px;
+    left: 75px;
+    right: 75px;
+    height: 52px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-home:hover {
+    transform: scale(1.02);
+}
+
+.home-button span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.3333333333333333em;
+    color: #008B23;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navigation-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 24px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-bar::before {
+    content: '';
+    width: 108px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .letter-content {
+        width: 100%;
+        max-width: 412px;
+        height: auto;
+        aspect-ratio: 412/892;
+    }
+}
+
+/* Scrollbar styling for letter content */
+.letter-paper::-webkit-scrollbar {
+    width: 4px;
+}
+
+.letter-paper::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.letter-paper::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+}
+
+.letter-paper::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Animation for letter appearance */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.letter-paper {
+    animation: slideIn 0.8s ease-out;
+}
+
+.back-to-home {
+    animation: slideIn 0.8s ease-out 0.2s both;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Letter Notification</title>
+    <link rel="stylesheet" href="letter-notification.css">
+</head>
+<body>
+    <div class="letter-notification">
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="time-date">
+                <span class="time">00:00</span>
+            </div>
+            <div class="status-icons">
+                <img src="../../source/wifi.png" alt="wifi" class="wifi-icon">
+                <img src="../../source/signal.png" alt="signal" class="cellular-icon">
+                <img src="../../source/battery.png" alt="battery" class="battery-icon">
+            </div>
+            <div class="camera-cutout"></div>
+        </div>
+
+        <!-- Lockscreen Background -->
+        <div class="lockscreen-bg">
+            <!-- Smart Space -->
+            <div class="smart-space">
+                <div class="smart-space-title">
+                    let me be your green
+                </div>
+               <div class="moon-info">
+                    <img src="../../source/moon.png" alt="Weather" class="moon-icon">
+                    <span class="moon-text">'cuz u 're my green</span>
+                </div>
+            </div>
+
+            <!-- Letter Notification -->
+            <div class="letter-notification-popup">
+                <div class="notification-content">
+                    <div class="notification-text">
+                        you 've received a letter from fushi.
+                        open it?
+                    </div>
+                    <div class="notification-buttons">
+                        <div class="button yes-button" id="yes-button">
+                            <span>yes</span>
+                        </div>
+                        <div class="button ok-button" id="ok-button">
+                            <span>ok</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-icon" id="info-icon">
+                    <span>i</span>
+                </div>
+            </div>
+
+           <!-- Back to Home Button -->
+            <div class="back-to-home" id="back-to-home">
+                <div class="home-button">
+                    <span>Back to home</span>
+                </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navigation-bar">
+            <!-- Gesture navigation bar -->
+        </div>
+    </div>
+
+    <script src="letter-notification.js"></script>
+</body>
+</html>

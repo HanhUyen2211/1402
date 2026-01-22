@@ -1,0 +1,328 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main letter notification container */
+.letter-notification {
+    width: 412px;
+    height: 892px;
+    border-radius: 18px;
+    border: 8px solid rgba(116, 119, 117, 0.5);
+    position: relative;
+    overflow: hidden;
+    background: #627C77;
+}
+
+/* Status Bar */
+.status-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    gap: 4px;
+    z-index: 10;
+}
+
+.time-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.time {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4285714285714286em;
+    letter-spacing: 1.7857142857142856%;
+    color: #FFFFFF;
+}
+
+.status-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Status icons (simplified) */
+.wifi,
+.signal,
+.battery {
+    width: 16px;
+    height: 16px;
+    background: #FFFFFF;
+    border-radius: 1px;
+}
+
+.camera-cutout {
+    position: absolute;
+    left: 50%;
+    top: 8px;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 24px;
+    background: #627C77;
+    border-radius: 12px;
+}
+
+/* Lockscreen Background */
+.lockscreen-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 24px; /* Leave space for navigation bar */
+    background-image: url('../../source/lockscreen-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Smart Space */
+.smart-space {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    height: 104px;
+    margin: 0 16px;
+    border-radius: 28px;
+    padding: 18px 16px 30px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.smart-space-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.2727272727272727em;
+    color: #F2F2F7;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    flex: 1;
+}
+
+.moon-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 2px;
+}
+
+.moon-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.moon-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 3.125%;
+    color: #FFFFFF;
+}
+
+/* Letter Notification Popup */
+.letter-notification-popup {
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    right: 20px;
+    min-height: 120px;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 20px;
+    gap: 12px;
+}
+
+.notification-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+
+.notification-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4em;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-align: center;
+    max-width: 360px;
+    margin: 0 auto;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.notification-buttons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    min-width: 56px;
+    height: 32px;
+    padding: 0 12px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 3.125%;
+    color: #008B23;
+    text-align: center;
+}
+
+.info-icon {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 22px;
+    height: 22px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.info-icon:hover {
+    transform: scale(1.05);
+}
+
+.info-icon span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 3.125%;
+    color: #008B23;
+    text-align: center;
+}
+
+/* Back to Home Button */
+.back-to-home {
+    position: absolute;
+    bottom: 50px;
+    left: 75px;
+    right: 75px;
+    height: 52px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-home:hover {
+    transform: scale(1.02);
+}
+
+.home-button span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.3333333333333333em;
+    color: #008B23;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navigation-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 24px;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-bar::before {
+    content: '';
+    width: 108px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .letter-notification {
+        width: 100%;
+        max-width: 412px;
+        height: auto;
+        aspect-ratio: 412/892;
+    }
+}
+
+/* Button animations */
+@keyframes buttonPress {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}
+
+.button:active,
+.info-icon:active,
+.back-to-home:active {
+    animation: buttonPress 0.2s ease;
+}
