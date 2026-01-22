@@ -176,7 +176,7 @@ class Lockscreen {
 
     goBack() {
         // Navigate back to homescreen
-        window.location.href = 'homescreen.html';
+        window.location.href = 'index.html';
     }
 
     handleSmartSpaceClick() {

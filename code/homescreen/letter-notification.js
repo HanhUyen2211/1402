@@ -210,7 +210,7 @@ class LetterNotification {
 
     goBackToHome() {
         // Navigate back to homescreen
-        window.location.href = 'homescreen.html';
+        window.location.href = 'indexs.html';
     }
 
     showInfo() {
