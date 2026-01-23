@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fireworks 16.02</title>
+  <link rel="preload" as="image" href="source/night.jpg">
+  <link rel="stylesheet" href="firework.css">
+</head>
+<body>
+  <!-- Canvas layer: meteors, rockets, fireworks -->
+  <!-- Firework Canvas -->
+  <canvas id="firework" aria-label="Fireworks animation canvas"></canvas>
+
+  <!-- Final Text (controlled by JS via class toggle) -->
+  <div class="firework-text" id="fireworkText">
+    năm mới vui vẻ~
+  </div>
+
+  <!-- Controls -->
+  <div class="firework-controls">
+    <button id="backBtn" type="button">Back</button>
+    <button id="startBtn" type="button">Start</button>
+  </div>
+
+  <script src="firework.js"></script>
+</body>
+</html>

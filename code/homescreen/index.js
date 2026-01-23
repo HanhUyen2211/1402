@@ -63,7 +63,13 @@ class Homescreen {
         // Store selected date in localStorage for use in other screens
         localStorage.setItem('selectedDate', selectedDate);
 
-        // Navigate to lockscreen
+        // Special case: 16.02 -> fireworks screen
+        if (selectedDate === '1602') {
+            window.location.href = 'firework.html';
+            return;
+        }
+
+        // Default: navigate to lockscreen
         window.location.href = 'lockscreen.html';
     }
 
