@@ -45,6 +45,10 @@ class LetterContent {
         // Get selected date from localStorage
         const selectedDate = localStorage.getItem('selectedDate') || '1402';
 
+        function renderLetter(text = '') {
+            return text.replace(/\n/g, '<br>');
+        }
+
         // Map dates to different letter content
         const letterContentMap = {
             '1402': `heungg ah,
@@ -240,7 +244,7 @@ fushi cụa heungg~`,
         // Apply the content to the letter text element
         const letterTextElement = document.querySelector('.letter-text');
         if (letterTextElement) {
-            letterTextElement.textContent = letterText;
+            letterTextElement.innerHTML = renderLetter(letterText);
         }
 
         // Update smart space content
