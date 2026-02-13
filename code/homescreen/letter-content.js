@@ -48,23 +48,37 @@ class LetterContent {
         // Map dates to different letter content
         const letterContentMap = {
             '1402': `heungg ah,
+
 gửi he iu dấu như con gấu cào cấu tim fu, dị nà 2 năm hơn chúm ta bên nhau gòi, nói dài cũng không dài nhưng ngắn thì chắc chắn là không ròi. hai năm em he chỉ típ nhận fu sau 1 tỷ tỷ cuộc cãi nhau. hai năm đầu ôm tay ấp bíc về cột sống cụa nhau. gáng gáng vài năm gòi mìn chum nhà nha.
+
 dạo này em he chuyển nhà, nên thời gian tới chắc sẽ ít gọi điện, chắc hẳn cả 2 đều bận. dù bận đến mấy thì miễn chái tym ta luôn hướng về nhau như lực hút chái đất là đượt hjhj. đến giai đoạn đi lèm gòi, phải giữ gìn sức khỏe hơn thoi, ăn chín, uống sôi, ăn no, uống đủ nhớ chưa.
+
 nay nà ngày tìn nhân, hong béc núc này fu bếu ràu chưa, nma lúc ziết cí nì thì zẫn nghèo. chắc lúc nì em he về nội đón tết với bà nội gòi. trời xuân hanh lạnh, mặc nhìu áo ấm lên đó. gòi mụt năm nào đó chúng ta dưới pháo hoa 7 sắc cầu vồng đón tết với nhau chum 1 bầu chời nè.
+
 fu húi hong có rì, có chái tym zàng cho iêm he hoi. mặc dù mít ướt, nma iu em he. làm fu rựn là fu tới trọ xới trọ he lên á. sợ chưa.
+
 heungg ah, lễ tình nhân ấm áp ~
+
 đọc xong thì hun fu 10 cái nhá hehe.
+
 yêu em bé của fushi,
 sao nhỏ của trăng nhỏ`,
 
             '1602': `heungg ah~,
 hmm lúc đọc có nì chắc pháo hoa giao thừa nổ ngợp nhà òi, hong béc năm nay chúng ta có đón giao thừa chung hong nữa nhỉ?
+
 nhớ năm nào ta cũm gọi điện cùng đón giao thừa với nhau, hjhj ấm áp mò. em bé của fu luôn muốn đón giao thừa cũng bà nội, vậy nên nhớ ôm bà 1 cí nè. 
+
 năm nay có gì mới hong ta, có lạnh queo quắt hong nhỉ?
+
 năm mới gòi, chúng ta đón giao thừa cùng nhau 3 lần gòi đó. fu hong bíc lại nhanh đến thế luôn, hjhj fu nói mà, fu chưa yêu ai quá 1 năm cả, riêng em he là nhìu năm hoi. 
+
 năm mới gòi, lại thêm tuổi, lại trưởng thành hơn tí gòi, huhu cả 2 đứa sắp gia nhập tư bản rùi. hong béc khi nào mới gặp nhau, ôm nhao ngủ thật ngon nựa. năm nay em bé muốn đi đâu nè? muốn đi biển nữa hongg, thấy thích biển quá chời lun.
+
 đi làm dù có bận thì cũng dành cho nhau 1 tí thời gian nè, gòi chúng ta cũng sẽ vượt qua thoi, đúng hongg? cùng thở, cùng lớn, cùng chưởng thành cùng nhau. mọi nẻo đường, hai chúm ta đều có nhau. buồn thì tìm fu giải bùn, vui thì kể nhau nghe, bựt mình thì hai đứa cùm chửi nè. 
+
 tuổi mới, mau ăn, chóng lớn!!!
+
 yêu em bé của fushi, 
 sao bự chà bá của trăng nhỏ ~ heungg_m`,
 
@@ -91,10 +105,15 @@ sao bự chà bá của trăng nhỏ ~ heungg_m`,
 
             '1802': `heungg ah,
 Nay là mùng 2 rùi, em bé có dui hem, lì xì được núi tiền to bù phụ cấp công ty đáng ghéc chưa?
+
 nay em bé định làm gì, đi chơi hay đi họ hàng, có hẹn hò với ai hongg. nhớ em bé quá, muốn ôm một cí nè. trời lạnh nhiều hongg, càng lạnh càng ôm càng ấm hjhj. khi nào mới được gặp em bé ta? chưa có xếp thời gian gì cả, hy vọng sẽ gặp nhiều ơi là nhiều. 
+
 lúc viết cí ní, là fu với em bé mới cãi nhau đùng đùng ví chuyện đi lèm cụa em bé. fu hong hỉu sao em bé cứ mún đi làm công ty đó quài, chạ hợp, mà cứng đầu. nói fu ngang như cua, chứ em bé ngang hơn cha của cua. haizz, mong em bé đi làm thuận lợi thui, chứ bíc làm dao bây giờ. rựn ròi hong péc có ngủ ngon hong, rựn mí hôm trời. ngừi ta quay clip, mà ngừi ta tập cí đó nhạc nhanh quá là ngừi ta bị lóng ngóng. bth mà cí gì nhanh quá là người ta lóng ngóng rồi cuống làm hong có được, hong giỏi lắm hjhj, nên em bé thông cảm vho fu được hong? 
+
 mà ngừi ta thèm ngủ, gọi mãi hong dậy chắc em bé đin cí đầu lắm. :( ngừi ta cũm mún dậy lắm mà mợt mở mắt hong nổi, 😭 😭, cố hớt sức gòi. chin nỗi iem pé vì đoiẹ fu thối ngủ như châu này dậy.
+
 hoiii, viết dị hoiii, còn để dành mai viết tiếp hehe, chúc iem pé mụt ngày tốt lành, ấm áp, iu fu hơn nè, kaka
+
 mến thưng em bé,
 fushi cụa heungg~`,
 
